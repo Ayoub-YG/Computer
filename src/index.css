@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background: url(./asserts/Bg.png);
 }
+.color-logo{
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    background: linear-gradient(89.97deg, #42E570 1.84%, #257BE0 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0rem 0.5rem;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  }
+  .link:hover{
+    border-radius: 8px;
+    border: 1.5px rgb(32, 134, 32) solid ;
+    padding: 0.25rem 0.5rem;
+  }
+  /* for link navbar  'Home Market ...'*/
+  a{
+  font-style: normal;
+  font-size: 20px;
+  margin: 2px 2rem;
+  padding: 0.25rem 0.5rem;
+  }
+  a:hover{
+    border: 2px rgba(66, 229, 112, 1) solid;
+    margin: 2px 2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius:8px;
+  }
+  /* this div for a card global */
+  .div{
+    background-color: #0F0B20;
+    margin: 30px;
+    padding: 1.5rem 2rem;
+    color: white;
+    border-radius: 10px;
+  }
