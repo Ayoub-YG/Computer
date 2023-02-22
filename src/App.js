@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <div className='div shadow-2xl'>
+        <div className='div'>
           <Navbar />
           <Home />
         </div>
