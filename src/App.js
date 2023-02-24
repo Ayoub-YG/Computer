@@ -1,17 +1,14 @@
 import './index.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route ,Routes } from "react-router-dom";
 import Home from './components/Home';
-import Navbar from './components/Navbar';
+import ScanHome from './components/ScanHome';
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <div className='div'>
-          <Navbar />
-          <Home />
-        </div>
-      </div>
-
+      <Routes>
+         <Route path='/'  element={<Home />}/>
+         <Route path='/scanHome'  element={<ScanHome />}/>
+      </Routes>
     </Router>
   );
 }

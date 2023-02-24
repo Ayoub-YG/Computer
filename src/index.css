@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/*RAY7A TSA9SINI 3LAH EL IMMAGE HADIK MDICALYA CHWYA RA7 N9LK PSQ ANTM DAYRIN W7D EL 3AFSA TA3 KI TOUCHI AYYY LINK YTBADEL EL STYLE TA3EH SO SYY TN7YHA*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Orbitron:wght@500;700&display=swap');
 
-body {
+
+.theHome-wrapper{
   background: url(./asserts/Bg.png);
   background-repeat:no-repeat;
+  height: 100vh;
+  width: 100% ;
   background-size: 100% 95%;
+  background-color: rgb(103, 36, 109);
+  padding: 35px;
+}
+.theDivHome{
+  height: 100vh;
+  width: 100% ;
   background-color: rgb(103, 36, 109);
 }
 
@@ -48,15 +57,18 @@ a:active {
 }
 
 /* this div for a card global */
-.div {
+.countainer-of-home{
   background: radial-gradient(ellipse  at  bottom , rgba(99, 76, 126, 1),#0F0B20);
-  margin: 3rem 5.4rem;
   padding: 1rem 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
+  margin: 3px 5px;
   color: white;
   border-radius: 20px;
   padding-left: 8rem;
   box-shadow: 30px 28px 23px rgba(0, 0, 0, 0.5);
+}
+.theScranHome{
+  background-color:#0F0B;
 }
 
 .title {
