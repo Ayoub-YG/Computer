@@ -8,7 +8,7 @@ function Navbar() {
       <div className='color-logo text-4xl'>S&S</div>
         <ul>
           {NavLinks.map(navLink => (
-            <Link to={`/${navLink.id}`} className='' key={navLink.id}>{navLink.title}</Link>
+            <Link to={`/${navLink.id}`} className='LiNavbar' key={navLink.id}>{navLink.title}</Link>
           ))}
         </ul>
     </nav>
