@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react"; 
- import {theColorTable} from "../constantes"
+ import {theColorTable} from "../constantes";
  document.body.requestFullscreen();
 function FullScreen() { 
   const [color, setColor] = useState("#FE0000");
@@ -14,7 +14,6 @@ return () => {clearTimeout(theTimer)};
 }
 }
 ,[color])
- 
   return ( 
     <div 
       style={{ 

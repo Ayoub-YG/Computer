@@ -15,7 +15,7 @@ function ScanHome() {
       } else {
         setRemainingTime(remainingTime - 1);
       }
-    }, 2000);
+    }, 1000);
     return () => clearInterval(intervalId);
   }, [remainingTime]);
   if (ableTo) { return (<FullScreen />) }
@@ -26,8 +26,8 @@ function ScanHome() {
         <p className='text-white'>This test depends on your attention so that the colors
           Fwill help you detect if there are defects in the screen, so keep your eyes on the screen</p>
         <div className="spinner-container">
-          <div className="spinner"></div>
-          <div className="spinner-text">Loading... {remainingTime}</div>
+          <div className="spinner mt-20"></div>
+          <div className="spinner-text absolute">{remainingTime}</div>
         </div>
       </div>
     </div>

@@ -5,25 +5,16 @@
 /*RAY7A TSA9SINI 3LAH EL IMMAGE HADIK MDICALYA CHWYA RA7 N9LK PSQ ANTM DAYRIN W7D EL 3AFSA TA3 KI TOUCHI AYYY LINK YTBADEL EL STYLE TA3EH SO SYY TN7YHA*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Orbitron:wght@500;700&display=swap');
 
-body {
+*{
   font-family: 'Orbitron';
   font-style: normal;
 }
-
-.theHome-wrapper {
-  background: url(./asserts/Bg.png);
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  background-size: 100% 95%;
-  background-color: rgb(103, 36, 109);
-  padding: 35px;
-}
-
-.theDivHome {
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(103, 36, 109);
+body {
+  font-family: 'Orbitron';
+  font-style: normal;
+  background: url(./asserts/background.png);
+  background-color: rgba(14, 14, 16, 1);
+  overflow: hidden;
 }
 
 .color-logo {
@@ -33,8 +24,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  padding: 0rem 0.5rem;
-  padding-left: 1.9rem;
+  margin-left: 1.8rem;
+  font-weight: 700;
 }
 
 .link:hover {
@@ -51,9 +42,11 @@ body {
   font-family: 'Orbitron';
   font-style: normal;
   font-weight: 500;
+  color: #FFFFFF;
 }
 
 .LiNavbar:focus,
+.LiNavbar:hover,
 .LiNavbar:active {
   border: 2px rgba(66, 229, 112, 1) solid;
   margin: 2px 2rem;
@@ -63,14 +56,8 @@ body {
 
 /* this div for a card global */
 .countainer-of-home {
-  background: radial-gradient(ellipse at bottom, rgba(99, 76, 126, 1), #0F0B20);
-  padding: 1rem 2rem;
-  padding-bottom: 3.5rem;
-  margin: 3px 5px;
   color: white;
-  border-radius: 20px;
-  padding-left: 8rem;
-  box-shadow: 30px 28px 23px rgba(0, 0, 0, 0.5);
+  margin: 1rem 5rem;
 }
 
 .theScranHome {
@@ -144,16 +131,16 @@ body {
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-top: 5px solid rgb(206, 211, 208);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   animation: spin 1s linear infinite;
   margin-top: 0.7rem;
 }
 
 .spinner-text {
-  margin-top: 20px;
-  font-size: 24px;
-  color: rgba(66, 229, 112, 1);
+  margin-top: 10px;
+  font-size: 27px;
+  font-weight: 500;
 }
 
 .spinner:after {
@@ -194,8 +181,6 @@ body {
 }
 
 .btns {
-  font-family: 'Orbitron';
-  font-style: normal;
   font-weight: 400;
 }
 
@@ -216,6 +201,26 @@ body {
   font-style: normal;
   font-weight: 400;
   color: white;
+  position: relative;
+}
+.description2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid red;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+  40%, 60%{
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+  }
 }
 
 .option {
@@ -235,8 +240,11 @@ body {
 }
 
 .image-repres {
-  width: 40rem;
-  height: 21.9rem;
+  width: 38rem;
+  height: 30rem;
+  border:1px solid;
+  border-image-source: linear-gradient(rgba(36, 118, 206, 1),rgba(66, 229, 112, 1),rgba(255, 28, 247, 1));
+  border-image-slice: 1;
 }
 
 .IMG {
@@ -244,4 +252,5 @@ body {
   height: 22rem;
   margin-right: 22rem;
   margin-top: 0rem;
+
 }
